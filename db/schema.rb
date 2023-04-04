@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_04_04_061456) do
+ActiveRecord::Schema.define(version: 2023_04_04_064416) do
 
   create_table "tier_items", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2023_04_04_061456) do
     t.text "justification"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "tierList"
   end
 
   create_table "tier_lists", force: :cascade do |t|
