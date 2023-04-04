@@ -1,6 +1,8 @@
-<h1>Editing Tier List</h1>
+<div class="container">
+    <h1>Editing Tier List</h1>
 
-<%= render 'form', tier_list: @tier_list %>
+    <%= render 'form', tier_list: @tier_list %>
 
-<%= link_to 'Show', @tier_list %> |
-<%= link_to 'Back', tier_lists_path %>
+    <button type="button" class="btn btn-primary"><b><%= link_to 'Show', @tier_list %></b></button> | 
+    <button type="button" class="btn btn-primary"><b><%= link_to 'Back', tier_lists_path %></b></button>
+</div>

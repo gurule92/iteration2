@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<body style="background-color:#31F652;">
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @tier_list.name %>
-</p>
+  <h6>
+    <strong>Name:</strong>
+    <%= @tier_list.name %>
+  </h6>
 
-<p>
-  <strong>Description:</strong>
-  <%= @tier_list.description %>
-</p>
+  <h6>
+    <strong>Description:</strong>
+    <%= @tier_list.description %>
+  </h6>
 
-<p>
-  <strong>Numtiers:</strong>
-  <%= @tier_list.numTiers %>
-</p>
+  <h6>
+    <strong>Number of tiers:</strong>
+    <%= @tier_list.numTiers %>
+  </h6>
 
-<%= link_to 'Edit', edit_tier_list_path(@tier_list) %> |
-<%= link_to 'Back', tier_lists_path %>
+  <button type="button" class="btn btn-primary text-white"> <%= link_to 'Edit', edit_tier_list_path(@tier_list) %> </button>
+  <button type="button" class="btn btn-primary text-white" color="inherit"> <%= link_to 'Back', tier_lists_path %> </button>
+  </body>
+</div>
