@@ -1,10 +1,10 @@
-<%= form_with(model: tier_item) do |form| %>
-  <% if tier_item.errors.any? %>
+<%= form_with(model: item) do |form| %>
+  <% if item.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(tier_item.errors.count, "error") %> prohibited this tier_item from being saved:</h2>
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
 
       <ul>
-        <% tier_item.errors.each do |error| %>
+        <% item.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>

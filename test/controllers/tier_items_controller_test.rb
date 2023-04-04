@@ -17,7 +17,7 @@ class TierItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create tier_item" do
     assert_difference('TierItem.count') do
-      post tier_items_url, params: { tier_item: { description: @tier_item.description, justification: @tier_item.justification, name: @tier_item.name, tier: @tier_item.tier } }
+      post tier_items_url, params: { tier_item: { description: @tier_item.description, justification: @tier_item.justification, name: @tier_item.name, tier: @tier_item.tier, tierList: @tier_item.tierList } }
     end
 
     assert_redirected_to tier_item_url(TierItem.last)
@@ -34,7 +34,7 @@ class TierItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update tier_item" do
-    patch tier_item_url(@tier_item), params: { tier_item: { description: @tier_item.description, justification: @tier_item.justification, name: @tier_item.name, tier: @tier_item.tier } }
+    patch tier_item_url(@tier_item), params: { tier_item: { description: @tier_item.description, justification: @tier_item.justification, name: @tier_item.name, tier: @tier_item.tier, tierList: @tier_item.tierList } }
     assert_redirected_to tier_item_url(@tier_item)
   end
 

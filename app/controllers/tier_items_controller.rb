@@ -65,6 +65,6 @@ class TierItemsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def tier_item_params
-      params.require(:tier_item).permit(:name, :description, :tier, :justification)
+      params.require(:tier_item).permit(:name, :description, :tierList, :tier, :justification)
     end
 end

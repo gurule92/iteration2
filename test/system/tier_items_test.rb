@@ -18,6 +18,7 @@ class TierItemsTest < ApplicationSystemTestCase
     fill_in "Justification", with: @tier_item.justification
     fill_in "Name", with: @tier_item.name
     fill_in "Tier", with: @tier_item.tier
+    fill_in "Tierlist", with: @tier_item.tierList
     click_on "Create Tier item"
 
     assert_text "Tier item was successfully created"
@@ -32,6 +33,7 @@ class TierItemsTest < ApplicationSystemTestCase
     fill_in "Justification", with: @tier_item.justification
     fill_in "Name", with: @tier_item.name
     fill_in "Tier", with: @tier_item.tier
+    fill_in "Tierlist", with: @tier_item.tierList
     click_on "Update Tier item"
 
     assert_text "Tier item was successfully updated"

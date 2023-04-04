@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   root "tier_lists#index"
   resources :tier_items
   resources :tier_lists
