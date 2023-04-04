@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tier_list.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tier_list.description %>
+</p>
+
+<p>
+  <strong>Numtiers:</strong>
+  <%= @tier_list.numTiers %>
+</p>
+
+<%= link_to 'Edit', edit_tier_list_path(@tier_list) %> |
+<%= link_to 'Back', tier_lists_path %>
