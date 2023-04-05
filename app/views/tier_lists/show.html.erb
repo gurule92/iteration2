@@ -6,7 +6,6 @@
     <strong>Name:</strong>
     <%= @tier_list.name %>
   </h6>
-
   <h6>
     <strong>Description:</strong>
     <%= @tier_list.description %>
@@ -17,7 +16,7 @@
     <%= @tier_list.numTiers %>
   </h6>
 
-  <button type="button" class="btn btn-primary text-white"> <%= link_to 'Edit', edit_tier_list_path(@tier_list) %> </button>
-  <button type="button" class="btn btn-primary text-white" color="inherit"> <%= link_to 'Back', tier_lists_path %> </button>
+  <button type="button" class="btn btn-primary text-white"> <%= link_to 'Edit', edit_tier_list_path(@tier_list), class:"nav-link" %> </button>
+  <button type="button" class="btn btn-primary text-white" color="inherit"> <%= link_to 'Back', tier_lists_path, class:"nav-link" %> </button>
   </body>
 </div>

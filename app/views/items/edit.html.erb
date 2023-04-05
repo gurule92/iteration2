@@ -1,6 +1,10 @@
+<body style="background-color:tan;">
+<div class="container">
 <h1>Editing Item</h1>
 
 <%= render 'form', item: @item %>
-
-<%= link_to 'Show', @item %> |
-<%= link_to 'Back', items_path %>
+<br>
+<button type="button" class="btn btn-primary"><%= link_to 'Show', @item, class:"nav-link" %> </button> |
+<button type="button" class="btn btn-primary"><%= link_to 'Back', items_path, class:"nav-link" %> </button>
+</div>
+</body
