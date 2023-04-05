@@ -1,2 +1,0 @@
-class TierItem < ApplicationRecord
-end

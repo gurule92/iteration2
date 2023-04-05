@@ -22,16 +22,6 @@ ActiveRecord::Schema.define(version: 2023_04_04_231307) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  create_table "tier_items", force: :cascade do |t|
-    t.string "name"
-    t.text "description"
-    t.integer "tier"
-    t.text "justification"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-    t.string "tierList"
-  end
-
   create_table "tier_lists", force: :cascade do |t|
     t.string "name"
     t.text "description"
