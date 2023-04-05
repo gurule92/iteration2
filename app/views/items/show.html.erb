@@ -26,8 +26,9 @@
       <%= @item.justification %>
     </h6>
 
-    <%= link_to 'Edit', edit_item_path(@item) %> |
-    <%= link_to 'Back', items_path %>
+    <button type="button" class="btn btn-primary text-white" color="inherit"><%= link_to 'Edit', edit_item_path(@item), class:"nav-link" %></button> |
+    <button type="button" class="btn btn-primary text-white" color="inherit"><%= link_to 'Destroy', @item, method: :delete, data: { confirm: 'Are you sure?' }, class:"nav-link" %> </button> |
+    <button type="button" class="btn btn-primary text-white" color="inherit"><%= link_to 'Back', items_path, class:"nav-link" %></button>
   </div>
 </body>
 
