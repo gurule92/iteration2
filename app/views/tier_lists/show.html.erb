@@ -1,24 +1,24 @@
-<body style="background-color:#31F652;">
+<body style="background-color:#70F0E1;">
 <div class="container">
   <p id="notice"><%= notice %></p>
 
-  <h6>
+  <h6 role="heading">
     <strong>Name:</strong>
     <%= @tier_list.name %>
   </h6>
-  <h6>
+  <h6 role="heading">
     <strong>Description:</strong>
     <%= @tier_list.description %>
   </h6>
 
-  <h6>
+  <h6 role="heading">
     <strong>Number of tiers:</strong>
     <%= @tier_list.numTiers %>
   </h6>
   <br>
-  <h6> <strong> Highest tier is at the top: </strong> </h6>
+  <h6 role="heading"> <strong> Highest tier is at the top: </strong> </h6>
    <% (1..@tier_list.numTiers).each_with_index do |n, index| %>
-    <h6>
+    <h6 role="heading">
       Items: Future version will include items that have this tier_list as the tierList attribute 
     </h6>
   <% end %>
