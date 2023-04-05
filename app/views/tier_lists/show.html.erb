@@ -15,7 +15,13 @@
     <strong>Number of tiers:</strong>
     <%= @tier_list.numTiers %>
   </h6>
-
+  <br>
+  <h6> <strong> Highest tier is at the top: </strong> </h6>
+   <% (1..@tier_list.numTiers).each_with_index do |n, index| %>
+    <h6>
+      Items: Future version will include items that have this tier_list as the tierList attribute 
+    </h6>
+  <% end %>
   <button type="button" class="btn btn-primary text-white"> <%= link_to 'Edit', edit_tier_list_path(@tier_list), class:"nav-link" %> </button>
   <button type="button" class="btn btn-primary text-white" color="inherit"> <%= link_to 'Back', tier_lists_path, class:"nav-link" %> </button>
   </body>
