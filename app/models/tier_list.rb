@@ -1,2 +1,0 @@
-class TierList < ApplicationRecord
-end
